@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="allFiles.css" rel="stylesheet" type="text/css">
+        <title>Lire des mots</title>
+    </head>
+
+<body id="back">
+	
+	<h1 id="titre" style="text-align: center;">Lire des mots</h1>
+	
+	<header>
+		
+		<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">		
+			<button onclick="All(sons, lesBases, mots)">Tout</button>
+			<button onclick="reset()">Rien</button>
+			<button onclick="melanger(mots)">Mélanger</button>
+			<button onclick="aide()">Aide</button>
+			
+			<div>Listes conçues avec 
+			<a target="_blank" href="http://www.manulex.org"><button>MANULEX</button></a>
+			</div>
+			
+			<a id="buttonLink" target="_blank" href="http://lire.au.cp.free.fr/francais/orthographe_lexicale/lecon_ill.pdf">
+				<button id="lecon" disabled="true">Leçon</button></a>
+										
+			<form>			
+				<label>Couleurs</label>
+				<select name="couleurs" id="couleurs">
+					<option value="noir_blanc" selected="selected">noir/blanc</option>
+					<option value="blanc_noir">blanc/noir</option>
+					<option value="jaune_noir">jaune/noir</option>
+					<option value="violet_blanc">violet/blanc</option>
+					<option value="black_cyan">black/cyan</option>
+					<option value="black_yellow">black/yellow</option>
+					<option value="white_blue">white/blue</option>
+					<option value="black_thalo_yellow_green">black/thalo yellow green</option>
+					<option value="lime_black">lime/black</option>
+				</select>
+			</form>
+		</div>
+		
+		
+		
+		<div style="display: flex; justify-content: center; flex-wrap: wrap; margin: 20px 0px;">
+			<h2 style="margin: 0px 20px">Catégories</h2>			
+			<form style="margin: 0px 20px;">
+				<select name="sons" id="sons">
+					<option value="rien" selected="selected">Les sons</option>
+					<option value="o_au_eau">o au eau</option>
+					<option value="ou_oi_on_om">ou oi on om</option>
+					<option value="e_ai_ei_es_er">é ê ai ei es er</option>
+					<option value="k">c ch cc k ck q qu</option>
+					<option value="f">f ff ph</option>
+					<option value="s_z">s ss z</option>
+					<option value="br">br cr dr fr gr pr tr</option>
+					<option value="bl">bl cl fl gl pl</option>
+					<option value="eu">eu oeu eux euse eusement</option>
+					<option value="ien">ian ien ieu ion</option>
+					<option value="tien">tie tien tion</option>
+					<option value="ill">ill ay oy uy</option>
+					<option value="ail">ail eil euil ouill</option>
+					<option value="c">c ç</option>
+					<option value="ette">er es ette elle erre esse enne</option>
+					<option value="g">g ge gu</option>
+					<option value="in">in im ain ein oin ien en</option>
+					<option value="x">x</option>
+					<option value="ch">ch</option>
+					<option value="gn">gn</option>
+				</select>
+			</form>
+			<form style="margin: 0px 20px">
+				<select name="lettres" id="lettres">
+					<option value="rien" selected="selected">Les lettres</option>
+					<option value="mots_outils">Mots outils</option>
+					<option value="3_lettres">3 lettres</option>
+				</select>
+			</form>
+		</div>
+		
+	</header>
+	
+	<main>
+		
+		<div id="input_bases"></div>		
+		
+		<p id="affichage-melange"></p>
+		
+	</main>	
+						
+	<script src="lire_des_mots.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+#affichage-melange {
+font-size: 50px;
+text-align: center;
+}
+
+header {
+display: block;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+body {
+background-color: white;
+}
+
+#input_bases {
+font-size: 20px;
+display: flex;
+margin: 10px;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+#box {
+text-align: center;
+}
